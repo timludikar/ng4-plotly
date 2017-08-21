@@ -1,22 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
 
-import { AppComponent } from './app.component';
-import { PlotlyComponent } from './plotly/plotly.component';
+import { AppComponent } from "./app.component";
+import { PlotlyComponent } from "./plotly/plotly.component";
+import { FigureDataService } from "./figure-data.service";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PlotlyComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
+  declarations: [AppComponent, PlotlyComponent],
+  imports: [BrowserModule, FormsModule, HttpModule],
+  providers: [FigureDataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
