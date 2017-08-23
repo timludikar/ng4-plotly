@@ -1,7 +1,6 @@
 import { Component, OnChanges, Input, ElementRef } from "@angular/core";
 import { Observable } from "rxjs/Rx";
-
-declare var Plotly: any;
+import Plotly from "plotly.js/dist/plotly";
 
 import { Layout } from "../layout";
 import { Track } from "../track";
